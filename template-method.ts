@@ -8,10 +8,10 @@ abstract class AbstractClass {
     }
 
     private _baseOperation1() {
-        console.log("AbstraClass : i'm doing the big stuff");
+        console.log("AbstractClass : i'm doing the big stuff");
     }
     private _baseOperation2() {
-        console.log("AbstraClass : i'm doing the big stuff (2)");
+        console.log("AbstractClass : i'm doing the big stuff (2)");
     }
 
     protected abstract customOperation1(): void;
@@ -43,6 +43,6 @@ class ConcreteClass2 extends AbstractClass {
 }
 
 const cc1 = new ConcreteClass1();
-const cc2 = new ConcreteClass1();
+const cc2 = new ConcreteClass2();
 cc1.mainAlgorithm();
 cc2.mainAlgorithm();
